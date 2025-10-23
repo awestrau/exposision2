@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exposición 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-md">
+            <a class="navbar-brand" href="#">Andrés Westra</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Proyectos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Acerca de</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Historia</a></li>
+                            <li><a class="dropdown-item" href="#">Educación</a></li>
+                            <li><a class="dropdown-item" href="#">Experiencia laboral</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Desactivado</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seccion de bienvenida -->
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-5 mb-3">Bienvenido/a a mi sitio</h1>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae est sint minima sit
+                    iste doloribus architecto ea libero illum amet officia quia, maxime quibusdam nesciunt nulla nemo
+                    soluta quae rem.</p>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <h2>Carrusel</h2>
+        <div id="welcomeCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded-3 shadow-sm">
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/1200/400?random=1" class="d-block w-100" alt="Diapositiva 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Proyecto destacado</h5>
+                        <p>Una breve descripción del proyecto más reciente.</p>
+                        <a class="btn btn-primary" href="#" role="button">Ver proyecto</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/1200/400?random=2" class="d-block w-100" alt="Diapositiva 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Investigación y diseño</h5>
+                        <p>Ideas, prototipos y pruebas de usuario.</p>
+                        <a class="btn btn-outline-light" href="#" role="button">Más información</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/1200/400?random=3" class="d-block w-100" alt="Diapositiva 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Colaboración</h5>
+                        <p>Trabajando con equipos multidisciplinarios.</p>
+                        <a class="btn btn-success" href="#" role="button">Contactar</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Tarjetas -->
+    <section class="container">
+        <h2>Tarjetas</h2>
+        <div class="row align-items-start g-3">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://picsum.photos/600/300?random=11" class="card-img-top" alt="Miniatura 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyectos</h5>
+                        <p class="card-text">Resumen breve de proyectos publicados y enlaces relevantes.</p>
+                        <a href="#" class="btn btn-primary">Ver proyectos</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://picsum.photos/600/300?random=12" class="card-img-top" alt="Miniatura 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog</h5>
+                        <p class="card-text">Entradas sobre diseño, código y aprendizajes.</p>
+                        <a href="#" class="btn btn-outline-primary">Leer blog</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://picsum.photos/600/300?random=13" class="card-img-top" alt="Miniatura 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Contacto</h5>
+                        <p class="card-text">Formas de trabajo y contacto profesional.</p>
+                        <a href="#" class="btn btn-success">Contactar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="needs-validation" novalidate>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">Contacto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="contact-name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="contact-name" name="name" required>
+                            <div class="invalid-feedback">Ingrese su nombre.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact-email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="contact-email" name="email" required>
+                            <div class="invalid-feedback">Ingrese un correo válido.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact-message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="contact-message" name="message" rows="4"
+                                required></textarea>
+                            <div class="invalid-feedback">Escribe un mensaje.</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Simple client-side validation + modal close on successful submit
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    } else {
+                        event.preventDefault()
+                        // Aquí puedes enviar los datos con fetch/axios o similar
+                        var modalEl = document.getElementById('contactModal')
+                        var modal = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl)
+                        modal.hide()
+                        form.classList.remove('was-validated')
+                        form.reset()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+
+</body>
+
+</html>
